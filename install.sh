@@ -4,7 +4,8 @@
 
 echo "下载脚本开始执行..."
 
-cdn="https://testingcf.jsdelivr.net/gh/lvboda/lizhi-mp3@main/publish/"
+cdn="https://github.com/lvboda/lizhi-mp3/raw/refs/heads/main/publish/"
+
 
 songs=(
     被禁忌的游戏/卡夫卡.mp3
@@ -96,7 +97,7 @@ songs=(
 
 for((i=0;i<${#songs[@]};i++))
 do
-wget -P ${songs[i]%/*} $cdn${songs[i]}
+./wget --no-check-certificate -P ${songs[i]%/*} $cdn${songs[i]}
 done
 
 echo "下载脚本执行完成"
