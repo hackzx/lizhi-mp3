@@ -4,7 +4,7 @@
 ## 下载
 ``` bash
 # 下载所有专辑曲目
-curl https://testingcf.jsdelivr.net/gh/lvboda/lizhi-mp3@main/install.sh | sh
+curl https://testingcf.jsdelivr.net/gh/hackzx/lizhi-mp3@main/install.sh | sh
 ```
 
 ## 目录
